@@ -162,6 +162,19 @@ def test_has_title_and_meta_description(page: str, parsed) -> None:
     assert 50 <= len(descriptions[0]) <= 165, f"{page}: meta description length off ({len(descriptions[0])})"
 
 
+@pytest.mark.parametrize("page", PAGES)
+def test_pages_are_not_indexable(page: str, parsed) -> None:
+    """Placeholder business - must never turn up in a search for a real Leeds joiner.
+    Drop this test and the meta tag together when the real details go live."""
+    robots = [
+        m.attrs.get("content", "")
+        for m in parsed[page].find("meta")
+        if m.attrs.get("name") == "robots"
+    ]
+    assert robots, f"{page}: missing <meta name=robots>"
+    assert "noindex" in robots[0], f"{page}: robots meta must say noindex, got {robots[0]!r}"
+
+
 def test_titles_are_unique(parsed) -> None:
     titles = [parsed[page].text_by_tag["title"][0] for page in PAGES]
     assert len(set(titles)) == len(titles), f"duplicate <title> values: {titles}"
