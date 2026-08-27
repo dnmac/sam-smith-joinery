@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Garden room placeholder photograph">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5e3c18"/>
+      <stop offset="1" stop-color="#805127"/>
+    </linearGradient>
+    <pattern id="grain" width="800" height="26" patternUnits="userSpaceOnUse">
+      <rect width="800" height="26" fill="none"/>
+      <path d="M0 13 Q 120 4 240 13 T 480 13 T 800 13" stroke="rgba(255,255,255,.07)" stroke-width="3" fill="none"/>
+      <path d="M0 24 Q 160 18 320 24 T 640 24 T 800 24" stroke="rgba(0,0,0,.10)" stroke-width="2" fill="none"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="url(#g)"/>
+  <rect width="800" height="600" fill="url(#grain)"/>
+  <g fill="none" stroke="rgba(255,255,255,.18)" stroke-width="2">
+    <rect x="60" y="60" width="680" height="480" rx="8"/>
+  </g>
+  <g transform="translate(400 268)" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="9"
+     stroke-linecap="round" stroke-linejoin="round">
+    <path d="M-46 30 L0 -34 L46 30 Z"/>
+    <path d="M-64 46 L64 46"/>
+  </g>
+  <text x="400" y="392" text-anchor="middle" font-family="Trebuchet MS, Segoe UI, sans-serif"
+        font-size="34" fill="#fff">Garden room</text>
+  <text x="400" y="430" text-anchor="middle" font-family="Segoe UI, sans-serif"
+        font-size="19" fill="rgba(255,255,255,.72)" letter-spacing="3">PLACEHOLDER PHOTO</text>
+</svg>

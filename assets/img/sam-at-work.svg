@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Portrait placeholder">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4a2e12"/><stop offset="1" stop-color="#8a5524"/></linearGradient></defs>
+  <rect width="800" height="600" fill="url(#g)"/>
+  <g stroke="rgba(255,255,255,.55)" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round" transform="translate(400 250) scale(4.2)">
+    <circle cx="0" cy="-14" r="11"/>
+    <path d="M-22 16a22 22 0 0 1 44 0"/>
+  </g>
+  <text x="400" y="430" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="34" fill="#fff">Sam in the workshop</text>
+  <text x="400" y="468" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="19" fill="rgba(255,255,255,.72)" letter-spacing="3">PLACEHOLDER PHOTO</text>
+</svg>

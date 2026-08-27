@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book a visit | Sam Smith Joinery</title>
+  <meta name="description" content="Book a free, no-obligation quote visit with Sam Smith Joinery. Tell us about your job and Sam will come out, measure up and put a fixed price in writing.">
+  <meta name="theme-color" content="#8a5524">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.2 5.2h3.6v6H4.2a1.6 1.6 0 0 1 0-6Z"/><path d="M7.8 5.6h12.4l-2.2 5.6"/><path d="m7.8 11.2 1.5-1.9 1.5 1.9 1.5-1.9 1.5 1.9 1.5-1.9 1.5 1.9 1.5-1.9"/></svg>
+        <span>Sam Smith Joinery<small>Joiner &amp; carpenter</small></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.6 6.5h16.8M3.6 12h16.8M3.6 17.5h16.8"/></svg> Menu
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Our Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="nav-cta"><a class="btn btn-primary" href="booking.html" aria-current="page">Book a visit</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <span class="eyebrow">Book a visit</span>
+        <h1>Book a free quote visit</h1>
+        <p>Fill this in and Sam will come out, measure up and put a fixed price in writing. It costs nothing and there is no obligation to go ahead.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="form-layout">
+          <form id="booking-form" class="booking-form" method="post"
+                action="https://formspree.io/f/REPLACE-WITH-YOUR-FORM-ID"
+                novalidate data-demo="true">
+            <h2>Your details</h2>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="name">Your name <span class="req" aria-hidden="true">*</span></label>
+                <input type="text" id="name" name="name" autocomplete="name" required>
+                <span class="error-text" id="name-error" role="alert"></span>
+              </div>
+              <div class="field">
+                <label for="email">Email address <span class="req" aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+                <span class="error-text" id="email-error" role="alert"></span>
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="phone">Phone number
+                  <span class="hint">Best number to reach you on during the day.</span></label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel">
+                <span class="error-text" id="phone-error" role="alert"></span>
+              </div>
+              <div class="field">
+                <label for="postcode">Postcode
+                  <span class="hint">So Sam can check the job is in his patch.</span></label>
+                <input type="text" id="postcode" name="postcode" autocomplete="postal-code">
+                <span class="error-text" id="postcode-error" role="alert"></span>
+              </div>
+            </div>
+
+            <h2>About the job</h2>
+
+            <div class="field">
+              <label for="service">What do you need doing?
+                <span class="req" aria-hidden="true">*</span></label>
+              <select id="service" name="service" required>
+                <option value="">Choose a service&hellip;</option>
+              <option>Fitted wardrobes &amp; bedroom furniture</option>
+              <option>Kitchen fitting &amp; worktops</option>
+              <option>Staircases &amp; bannisters</option>
+              <option>Doors, frames &amp; hanging</option>
+              <option>Skirting, architrave &amp; mouldings</option>
+              <option>Decking, fencing &amp; garden joinery</option>
+              <option>Garden rooms &amp; garden offices</option>
+              <option>Sash &amp; casement window repair</option>
+              <option>Flooring — solid, engineered &amp; laminate</option>
+              <option>Alcove shelving, media units &amp; repairs</option>
+                <option>Something else / not sure yet</option>
+              </select>
+              <span class="error-text" id="service-error" role="alert"></span>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="preferred-date">Preferred visit date
+                  <span class="hint">Sam will confirm or suggest the nearest slot.</span></label>
+                <input type="date" id="preferred-date" name="preferred-date">
+                <span class="error-text" id="preferred-date-error" role="alert"></span>
+              </div>
+              <div class="field">
+                <label for="preferred-time">Best time of day</label>
+                <select id="preferred-time" name="preferred-time">
+                  <option>Morning (8am &ndash; 12pm)</option>
+                  <option>Afternoon (12pm &ndash; 5pm)</option>
+                  <option>Early evening (after 5pm)</option>
+                  <option>Any time, I am flexible</option>
+                </select>
+                <span class="error-text" id="preferred-time-error" role="alert"></span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="details">Tell Sam about the job
+                <span class="req" aria-hidden="true">*</span>
+                <span class="hint">Rough sizes, the room, and anything that might catch him
+                  out — old plaster, awkward access, a deadline.</span></label>
+              <textarea id="details" name="details" rows="6" minlength="20" required></textarea>
+              <span class="error-text" id="details-error" role="alert"></span>
+            </div>
+
+            <div class="field">
+              <label for="how-heard">How did you hear about Sam?</label>
+              <select id="how-heard" name="how-heard">
+                <option>Recommended by a friend or family</option>
+                <option>Google or another search engine</option>
+                <option>Facebook or Instagram</option>
+                <option>Saw the van locally</option>
+                <option>Repeat customer</option>
+              </select>
+              <span class="error-text" id="how-heard-error" role="alert"></span>
+            </div>
+
+            <div class="honeypot" aria-hidden="true">
+              <label for="company-website">Leave this field blank</label>
+              <input type="text" id="company-website" name="company-website" tabindex="-1" autocomplete="off">
+            </div>
+
+            <div class="field checkbox">
+              <input type="checkbox" id="consent" name="consent" required>
+              <label for="consent">I am happy for Sam to contact me about this enquiry.
+                Your details are only used to quote the job and are never passed to anyone else.
+                <span class="req" aria-hidden="true">*</span></label>
+            </div>
+            <span class="error-text" id="consent-error" role="alert"></span>
+
+            <button type="submit" class="btn btn-primary">
+              Send my enquiry <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12h13.6"/><path d="m12.8 6.6 5.4 5.4-5.4 5.4"/></svg></button>
+
+            <div class="form-status" id="form-status" role="status" tabindex="-1" hidden></div>
+          </form>
+
+          <aside class="stack">
+            <div class="aside-card">
+              <h3>What happens next</h3>
+              <ul>
+                <li>Sam reads every enquiry himself, usually the same evening.</li>
+                <li>He will call or email within one working day to arrange the visit.</li>
+                <li>The visit takes 20&ndash;30 minutes and costs nothing.</li>
+                <li>A written fixed quote follows within 48 hours.</li>
+              </ul>
+            </div>
+            <div class="aside-card">
+              <h3>In a hurry?</h3>
+              <p>Emergency repairs, a door that will not lock or storm damage — ring rather
+                 than fill this in.</p>
+              <p><a class="btn btn-primary" href="tel:+447700900123">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.8 3.4H4.7a2.1 2.1 0 0 0-2.1 2.3c.6 6.9 5.8 12.1 12.7 12.7a2.1 2.1 0 0 0 2.3-2.1v-2.1a1.6 1.6 0 0 0-1.3-1.6l-2.4-.5a1.6 1.6 0 0 0-1.6.7l-.6.9a12.4 12.4 0 0 1-4.3-4.3l.9-.6a1.6 1.6 0 0 0 .7-1.6l-.5-2.4a1.6 1.6 0 0 0-1.6-1.3Z"/></svg> 07700 900123</a></p>
+              <p style="margin-top:.75rem"><a href="mailto:sam@samsmithjoinery.co.uk">sam@samsmithjoinery.co.uk</a></p>
+            </div>
+            <div class="aside-card">
+              <h3>Already have drawings?</h3>
+              <p>Mention it in the box and Sam will send you an email address you can attach
+                 plans, photographs or an architect's drawing to.</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <h3>Sam Smith Joinery</h3>
+          <p>Time-served joiner and carpenter covering Leeds &amp; West Yorkshire. Free quotes, fixed prices
+             and work that is left tidy at the end of every day.</p>
+        </div>
+        <div>
+          <h3>Popular services</h3>
+          <ul>
+            <li><a href="services.html">Fitted wardrobes</a></li>
+            <li><a href="services.html">Kitchen fitting</a></li>
+            <li><a href="services.html">Staircases</a></li>
+            <li><a href="services.html">Decking &amp; garden joinery</a></li>
+            <li><a href="gallery.html">See recent work</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Get in touch</h3>
+          <ul>
+            <li>Mobile: <a href="tel:+447700900123">07700 900123</a></li>
+            <li>Workshop: <a href="tel:+441134960123">0113 496 0123</a></li>
+            <li>Email: <a href="mailto:sam@samsmithjoinery.co.uk">sam@samsmithjoinery.co.uk</a></li>
+            <li><a href="booking.html">Book a free quote visit</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Areas covered</h3>
+          <p>Leeds, Bradford, Wakefield, Harrogate, Ilkley, Otley, Wetherby and the
+             surrounding villages. Further afield by arrangement.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Sam Smith Joinery. Sole trader. Public liability insurance held.</span>
+        <span>Registered address and insurance certificate available on request.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
