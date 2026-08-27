@@ -53,7 +53,8 @@
     valueMissing: 'Please fill this in so Sam can come back to you.',
     typeMismatch: 'That does not look quite right — please check it.',
     tooShort: 'Please give a little more detail.',
-    patternMismatch: 'Please use a valid UK phone number.'
+    patternMismatch: 'Please use a valid UK phone number.',
+    rangeUnderflow: 'Please pick a date from today onwards.'
   };
 
   function messageFor(field) {
@@ -62,6 +63,7 @@
     if (v.typeMismatch) return MESSAGES.typeMismatch;
     if (v.tooShort) return MESSAGES.tooShort;
     if (v.patternMismatch) return MESSAGES.patternMismatch;
+    if (v.rangeUnderflow) return MESSAGES.rangeUnderflow;
     return field.validationMessage;
   }
 

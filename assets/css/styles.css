@@ -257,6 +257,7 @@ img { height: auto; display: block; }
 .grid { display: grid; gap: 1.5rem; }
 .grid-3 { grid-template-columns: repeat(auto-fit, minmax(285px, 1fr)); }
 .grid-2 { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+.grid-4 { grid-template-columns: repeat(auto-fit, minmax(232px, 1fr)); }
 
 .card,
 .service-card {

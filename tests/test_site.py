@@ -401,6 +401,22 @@ def test_service_select_options_match_services_page() -> None:
 # --- behaviour / assets ---------------------------------------------------
 
 
+def test_date_field_has_a_friendly_out_of_range_message() -> None:
+    """A past date otherwise falls through to the browser's own wording, which reads
+    nothing like the site's other error messages (and shows US date order)."""
+    js = (SITE_ROOT / "assets/js/main.js").read_text(encoding="utf-8")
+    assert "rangeUnderflow" in js, "no custom message for a date before the minimum"
+
+
+def test_process_steps_sit_on_a_balanced_grid() -> None:
+    """Four steps on a three-column grid leaves one orphan on its own row."""
+    steps = re.search(r'<div class="([^"]*)steps"', raw("index.html"))
+    assert steps, "index.html has no steps grid"
+    assert "grid-4" in steps.group(1), f"steps should use grid-4, got {steps.group(1)!r}"
+    css = (SITE_ROOT / "assets/css/styles.css").read_text(encoding="utf-8")
+    assert ".grid-4" in css, "grid-4 is not defined in the stylesheet"
+
+
 def test_javascript_is_clean() -> None:
     js = (SITE_ROOT / "assets/js/main.js").read_text(encoding="utf-8")
     assert "console.log" not in js, "strip debug logging"
